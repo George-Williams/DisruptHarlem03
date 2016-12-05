@@ -12,43 +12,21 @@
       body {
         text-align: center;
         color: white;
-        background-color: black;
+        background-image: url(images/mobile_gaming.jpg);
+        background-size: cover;
+        background-position: center;
       }
-      
-      div.gallery {
-      margin:0 auto;
-      width: 400px; /*you decide width*/
-      }
-      div {
+      div.dropdown {
         display: inline;
-      }
-      button{
-        margin: 0 auto;
-      }
-
-      div.img {
-        margin: 5px;
-        border: 1px solid #ccc;
-        float: left;
-        width: 180px;
-      }
-
-      div.img:hover {
-        border: 1px solid #777;
-      }
-
-      div.img img {
-        width: 100%;
-        height: auto;
-      }
-
-      div.desc {
-        padding: 15px;
-        text-align: center;
       }
       li  {
         list-style-type: none;
-      }  
+        display: inline;
+        font-size: 20px;
+      }
+      button  {
+        color: black;
+      }
 </style>
 </head>
 <body>
@@ -100,7 +78,7 @@
      <br>
      <br>
      <br>
-     <h3> Find Your Mobile Game Here</h3>
+     <h3>Find A Game To Talk About</h3>
      <ul>
       <li><a href="#">A</a></li>
       <li><a href="#">B</a></li>
@@ -129,38 +107,37 @@
       <li><a href="#">Y</a></li>
       <li><a href="#">Z</a></li>
     </ul>
-
-
-
-
-    <div class="gallery">
-     <div class="img">
-  <a target="_blank" href="#">A Short Tale
-    <img src="http://www.glitchgames.co.uk/media/aShortTale/ipad%20screens/3.jpg" alt="Fjords" width="300" height="200">
-  </a>
-  <div class="desc">Add a description of the image here</div>
-</div>
-
-<div class="img">
-  <a target="_blank" href="#">
-    <img src="http://www.glitchgames.co.uk/media/aShortTale/ipad%20screens/3.jpg" alt="Forest" width="300" height="200">
-  </a>
-  <div class="desc">Add a description of the image here</div>
-</div>
-
-<div class="img">
-  <a target="_blank" href="#">
-    <img src="http://www.glitchgames.co.uk/media/aShortTale/ipad%20screens/3.jpg" alt="Northern Lights" width="300" height="200">
-  </a>
-  <div class="desc">Add a description of the image here</div>
-</div>
-
-<div class="img">
-  <a target="_blank" href="#">
-    <img src="http://www.glitchgames.co.uk/media/aShortTale/ipad%20screens/3.jpg" alt="Mountains" width="300" height="200">
-  </a>
-  <div class="desc">Add a description of the image here</div>
-</div>
-</div>
+    <br>
+    <br>
+    <br>
+    <h2> Recent Posts</h2>
+    <br>
+    <br>
+    <div class="ideas">
+      <span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span>
+      <count>56</count>
+      <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+      <h2><a href="#">Candy Crush</a></h2>
+      <h4>I think Candy Crush should shorten the refresh timer for lives, to keep its players locked into the game more.</h4>-by user <b><a href="#">staycrushin</a></b>
+    <br>
+      <input type="comment" name="comment" placeholder="Leave A Comment Here...">
+      <button type="submit">Comment</button>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="ideas">
+      <span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span>
+      <count>34</count>
+      <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+      <h2><a href="#">Temple Run 2</a></h2>
+      <h4>It would be cool if Temple Run 2 let you scan your own characters to run with in game!!</h4>-by user <b><a href="#">alwayzrunnin</a></b>
+    <br>
+      <input type="comment" name="comment" placeholder="Leave A Comment Here...">
+      <button type="submit">Comment</button>
+    </div>
+    <br>
+    <br>
+    <br>
 </body>
 </html>

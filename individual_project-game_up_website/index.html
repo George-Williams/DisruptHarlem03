@@ -4,19 +4,21 @@
   <title>
     GameUp
   </title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <style>
       body {
         text-align: center;
         color: white;
-        background-color: black;
+        background-image: url(images/home_image.jpg);
       }
-      
       div {
         display: inline;
+      }
+      img.mySlides  {
+        margin: auto;
       }
 </style>
 </head>
@@ -68,12 +70,80 @@
      </div>
      <br>
      <br>
+     <div class="news_slides">
+     <img class="mySlides" src="https://i.ytimg.com/vi/4V6nFSX7hPs/maxresdefault.jpg" height="400" width="1000">
+     <img class="mySlides" src="http://cdn.bgr.com/2016/09/super-mario-run.jpg?quality=98&strip=all" height="400" width="1000">
+     <img class="mySlides" src="https://winblogs.azureedge.net/win/2016/10/Gears-of-War-4-Key-Art-No-Logo.jpg" height="400" width="1000">
+     <img class="mySlides" src="http://i.kinja-img.com/gawker-media/image/upload/t_original/zwwlvzjj0ximj6hsaxyi.jpg" height="400" width="1000">
+     </div>
      <br>
-     <p class="button" id="minus">-</p>
-     <p id="count">0</p>
-     <p class="button" id="plus">+</p>
-     <input type="text" name="suggestion" size="80" placeholder="Type Your Idea Here...">
      <br>
-     
+     <div class="ideas">
+      <span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span>
+      <count>67</count>
+      <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+      <h2><a href="#">Overwatch</a></h2>
+      <h4>I think it would be cool if they gave Reaper a Christmas-themed skin and replaced his "Die, Die, Die" with "Ho, Ho, Ho"</h4>-by user <b><a href="#">heroesneverdie</a></b>
+    <br>
+      <input type="comment" name="comment" placeholder="Leave A Comment Here...">
+      <button type="submit">Comment</button>
+    </div>
+    <br>
+    <br>
+    <br><div class="ideas">
+      <span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span>
+      <count>56</count>
+      <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+      <h2><a href="#">Candy Crush</a></h2>
+      <h4>I think Candy Crush should shorten the refresh timer for lives, to keep its players locked into the game more.</h4>-by user <b><a href="#">staycrushin</a></b>
+    <br>
+      <input type="comment" name="comment" placeholder="Leave A Comment Here...">
+      <button type="submit">Comment</button>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="ideas">
+      <span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span>
+      <count>45</count>
+      <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+      <h2><a href="#">Smite</a></h2>
+      <h4>I thing they should re-design magic class gods and the mods that come with those to be easier to understand.</h4>-by user <b><a href="#">gods4ce</a></b>
+    <br>
+      <input type="comment" name="comment" placeholder="Leave A Comment Here...">
+      <button type="submit">Comment</button>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="ideas">
+      <span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span>
+      <count>34</count>
+      <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+      <h2><a href="#">Temple Run 2</a></h2>
+      <h4>It would be cool if Temple Run 2 let you scan your own characters to run with in game!!</h4>-by user <b><a href="#">alwayzrunnin</a></b>
+    <br>
+      <input type="comment" name="comment" placeholder="Leave A Comment Here...">
+      <button type="submit">Comment</button>
+    </div>
+    <br>
+    <br>
+    <br>
+     <script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 4000); // Change image every 4 seconds
+}
+</script>
 </body>
 </html>
